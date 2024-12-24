@@ -26,6 +26,8 @@ class InferenceModel private constructor(context: Context) {
             throw IllegalArgumentException("Model not found at path: $MODEL_PATH")
         }
 
+
+
         val options = LlmInference.LlmInferenceOptions.builder()
             .setModelPath(MODEL_PATH)
             .setMaxTokens(1024)
